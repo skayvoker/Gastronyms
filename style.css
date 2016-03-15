@@ -7,6 +7,7 @@ body {
   color: #000;
   width: 100%;
   height: auto;
+  background: url(img/background_repeat.png) repeat;
 }
 img {
   max-width: 100%;
@@ -22,7 +23,6 @@ a {
   max-width: 1280px;
   margin: auto;
   height: auto;
-  background: url(img/background1.jpg);
 }
 .header {
   width: 100%;
