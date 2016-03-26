@@ -23,10 +23,27 @@
 }
 body {
   font: 100%/1.5em Arial, Helvetica, sans-serif;
-
   width: 100%;
   height: auto;
-  background: url(../img/background_repeat.png) repeat;
+  background:url(../img/background_repeat.png) repeat;
+}
+body:after{
+  background: transparent;
+ background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+ background: -webkit-gradient(left top(0%, rgba(255, 255, 255, 0.9)), color-stop(100%, rgba(0, 0, 0, 0.9)));
+ background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background: -webkit-gradient(bottom(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(0, 0, 0, 0.1)));
+ background: -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.1) 100%);
+ background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.1) 100%);
+ background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.1) 100%);
+ content: "";
+ display: block;
+height:40%;
+ left: 0;
+ position: absolute;
+ top: 0;
+ width: 100%;
+ z-index:0;
 }
 img {
   max-width: 100%;
@@ -47,6 +64,8 @@ header {
   max-width: 1030px;
   margin: auto;
   padding-top: 2%;
+  position:relative;
+     z-index:2;
 }
 
 .butStrl {
@@ -109,16 +128,16 @@ header {
   text-align: center;
   padding-bottom:5%;
   font-family: lady;
-  background: linear-gradient(#3fa696,#279181);  /* подробнее про градиенты */
--webkit-background-clip: text;  /* подробнее про background-clip */
-color: transparent;
+  text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255,0.50);
+  color: #339c8b;
 }
 .logo p {
   color: #6b7272;
   width: 100%;
   text-align: center;
-  font-size:0.9em;
+  font-size:0.8em;
   font-family: italic;
+    text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255,0.50);
 }
 .logo p:before, .logo p:after {
   content: '';
@@ -173,7 +192,7 @@ nav {
   width: 100%;
   margin: auto;
   position: absolute;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 .imgMenu {
@@ -183,32 +202,33 @@ nav {
 nav ul {
   width: 100%;
   position: absolute;
-  margin-top: -5%;
+  margin-top: -9%;
 }
 
 nav ul li {
   display: inline-block;
-  margin-left:0.6%;
-  padding: 0.5% 1% 0.5% 1%;
+  margin-left:3%;
+  padding: 1% 1% 0.5% 1%;
   cursor: pointer;
   margin-top:0.25%;
   position: relative;
 }
 
 nav ul li:first-child {
-  margin-left: 5%;
+  margin-left: 10%;
 }
 nav ul li p {
   margin-top: -10px;
   text-align: center;
   font-size: 0.9em;
   font-family:italic;
-  background: linear-gradient(#8f3c1b,#7a351a);  /* подробнее про градиенты */
--webkit-background-clip: text;  /* подробнее про background-clip */
-color: transparent;
+color: #723a1e;
 }
 nav ul li a {
-  color: #85391b;
+  background: linear-gradient(#8f3c1b,#7a351a);  /* подробнее про градиенты */
+-webkit-background-clip: text;  /* подробнее про background-clip */
+  color:#8b3a1b;
+  text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255,0.50);
   font-weight: bold;
   font-size: 1.1em;
 }
@@ -230,10 +250,13 @@ position: relative;
 background: rgba(138, 99, 53, .6);
 box-shadow:0 0.5px 1px rgba(255, 255, 255, 0.2),inset 0px 1px 0px rgba(0, 0, 1, 0.28);
 }
+nav ul li:hover nav ul li a{
+  text-shadow:none;
+}
 nav ul li:hover:after {
 content: '';
 width: 0;
-height: 38px;
+height: 34px;
 opacity:1;
 position: absolute;
 top: 0;
@@ -246,7 +269,7 @@ border-bottom: 10px solid transparent;
 nav ul li:hover:before {
 content: '';
 width: 0;
-height: 38px;
+height: 34px;
 position: absolute;
 top: 0;
 right: -10px;
@@ -492,9 +515,10 @@ nav ul .linemenu{
 }
 .circle>p {
   margin-top: 20%;
-  color: #67b7ab;
+  color: #278f7f;
   font-family: BOLDH;
-  font-size: 1.1em;
+  font-size: 1em;
+  text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255,0.50);
 }
 .circle>p+p:after {
   content: '';
@@ -524,8 +548,9 @@ nav ul .linemenu{
 .Foto-cont a{
   margin-left: 3%;
   font-family: italic;
-  font-size: 13px;
+  font-size: 12px;
   color: #278f7f;
+  text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255,0.50);
   font-weight: bold;
 }
 .Foto-cont h3{
@@ -750,8 +775,9 @@ aside h3 {
 aside a {
   margin-left: 5%;
   font-family: italic;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #278f7f;
+  text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255,0.50);
   font-weight: bold;
 }
 aside img {
