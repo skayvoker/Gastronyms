@@ -4,22 +4,22 @@
 }
 @font-face {
   font-family: lady;
-  src: url(fonts/LADYCW__.ttf);
+  src: url(../fonts/LADYCW__.ttf);
 }
 
 @font-face {
   font-family: BOLDH;
-  src: url(fonts/InterstateBoldCondensed.ttf);
+  src: url(../fonts/InterstateBoldCondensed.ttf);
 }
 
 @font-face {
   font-family: italic;
-  src: url(fonts/georgia-italic.ttf);
+  src: url(../fonts/georgia-italic.ttf);
 }
 
 @font-face {
   font-family: regs;
-  src: url(fonts/Georgia-Regular.ttf);
+  src: url(../fonts/Georgia-Regular.ttf);
 }
 body {
   font: 100%/1.5em Arial, Helvetica, sans-serif;
@@ -157,7 +157,7 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
     background-color:white;
   border:none;
   outline:none;
-  padding:2px 0px 7px 30px;
+  padding:2px 0px 8px 30px;
   border-radius:0px 20px 20px 0;
   width:20px;
   cursor:pointer;
@@ -531,6 +531,7 @@ nav ul .linemenu{
 .Foto-cont h3{
   font-family: BOLDH;
   float: left;
+  font-size: 16px;
   color: #393939;
 }
 
