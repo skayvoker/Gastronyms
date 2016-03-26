@@ -26,7 +26,7 @@ body {
 
   width: 100%;
   height: auto;
-  background: url(img/background_repeat.png) repeat;
+  background: url(../img/background_repeat.png) repeat;
 }
 img {
   max-width: 100%;
@@ -61,15 +61,15 @@ header {
   margin-top:16%;
   -webkit-box-shadow: 0.5px 0.5px 2px 0.5px rgba(0,0,0,0.75);
   -moz-box-shadow: 10.5px 0.5px 2px 0.5px rgba(0,0,0,0.75);
-  box-shadow:0.5px 0.5px 2px 0.5px rgba(0,0,0,0.75);
+  box-shadow:1px 1px 2px 0.5px rgba(0,0,0,0.75);
 }
 .up{
-  background:url(img/up-row.png) no-repeat;
+  background:url(../img/up-row.png) no-repeat;
   width:11px;
   height:11px;
 }
 .down{
-  background:url(img/down-row.png) no-repeat;
+  background:url(../img/down-row.png) no-repeat;
   width:11px;
   height:11px;
   margin-left:-15%;
@@ -152,7 +152,7 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
 }
 .search input[type="button"]{
 
-  background:url(img/lupa.png) no-repeat;
+  background:url(../img/lupa.png) no-repeat;
   background-position:center;
     background-color:white;
   border:none;
@@ -211,6 +211,13 @@ nav ul li a {
   color: #85391b;
   font-weight: bold;
   font-size: 1.1em;
+}
+nav ul .line{
+  color: rgba(255, 255, 255, .2);
+  margin: 37px 10px 0 10px;
+  font-size: 25px;
+  width: 2px;
+  height: 41px;
 }
 nav ul li:hover .cvet {
   background: linear-gradient(#fdfdfd,#e0e0e0);
@@ -341,12 +348,12 @@ nav ul .linemenu{
 }
 .flex-direction-nav .flex-prev {
   left: 35%;
-  background: url(img/strelka1.gif) no-repeat;
+  background: url(../img/strelka1.gif) no-repeat;
 }
 .flex-direction-nav .flex-next {
   right: 35%;
   text-align: right;
-  background: url(img/strelka2.gif) no-repeat;
+  background: url(../img/strelka2.gif) no-repeat;
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 1;
@@ -840,7 +847,7 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
 }
 .Subcribe input[type="button"]{
 
-    background:url(img/nIX_Km8DCbQ.jpg) no-repeat;
+    background:url(../img/nIX_Km8DCbQ.jpg) no-repeat;
     background-position: center;
       background-color:#f4ebd8;
   border:none;
@@ -862,7 +869,7 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
 }
 footer{
   overflow: hidden;
-background:url(img/fotter.jpg)no-repeat;
+background:url(../img/fotter.jpg)no-repeat;
 max-width: 998px;
 margin: auto;
 height: auto;
