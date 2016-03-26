@@ -38,14 +38,9 @@ ul {
 a {
   text-decoration: none;
 }
-.all {
-  max-width: 1280px;
-  margin: auto;
-  height: auto;
-}
-.header {
-  width: 100%;
 
+header {
+  width: 100%;
   overflow: hidden;
 }
 .content {
@@ -64,16 +59,19 @@ a {
   border:none;
   outline:none;
   margin-top:16%;
+  -webkit-box-shadow: 0.5px 0.5px 2px 0.5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10.5px 0.5px 2px 0.5px rgba(0,0,0,0.75);
+  box-shadow:0.5px 0.5px 2px 0.5px rgba(0,0,0,0.75);
 }
 .up{
-  background:url(img/strelkatop.jpg) no-repeat;
-  width:14px;
-  height:14px;
+  background:url(img/up-row.png) no-repeat;
+  width:11px;
+  height:11px;
 }
 .down{
-  background:url(img/strelkabot.jpg) no-repeat;
-  width:14px;
-  height:14px;
+  background:url(img/down-row.png) no-repeat;
+  width:11px;
+  height:11px;
   margin-left:-15%;
 }
 .someText {
@@ -171,23 +169,24 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
   font-family: italic;
   font-size:0.9em;
 }
-.menu {
+nav {
   width: 100%;
   margin: auto;
   position: absolute;
   margin-top: 2%;
 }
+
 .imgMenu {
   width: 100%;
 }
 
-.menu ul {
+nav ul {
   width: 100%;
   position: absolute;
   margin-top: -5%;
 }
 
-.menu ul li {
+nav ul li {
   display: inline-block;
   margin-left:0.6%;
   padding: 0.5% 1% 0.5% 1%;
@@ -196,10 +195,10 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
   position: relative;
 }
 
-.menu ul li:first-child {
+nav ul li:first-child {
   margin-left: 5%;
 }
-.menu ul li p {
+nav ul li p {
   margin-top: -10px;
   text-align: center;
   font-size: 0.9em;
@@ -208,23 +207,23 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
 -webkit-background-clip: text;  /* подробнее про background-clip */
 color: transparent;
 }
-.menu ul li a {
+nav ul li a {
   color: #85391b;
   font-weight: bold;
   font-size: 1.1em;
 }
-.menu ul li:hover .cvet {
+nav ul li:hover .cvet {
   background: linear-gradient(#fdfdfd,#e0e0e0);
 -webkit-background-clip: text;
 color: transparent;
 }
 
-.menu ul li:hover {
+nav ul li:hover {
 position: relative;
 background: rgba(138, 99, 53, .6);
 box-shadow:0 0.5px 1px rgba(255, 255, 255, 0.2),inset 0px 1px 0px rgba(0, 0, 1, 0.28);
 }
-.menu ul li:hover:after {
+nav ul li:hover:after {
 content: '';
 width: 0;
 height: 38px;
@@ -237,7 +236,7 @@ border-right: 10px solid rgba(138, 99, 53, .6);;
 border-bottom: 10px solid transparent;
 }
 
-.menu ul li:hover:before {
+nav ul li:hover:before {
 content: '';
 width: 0;
 height: 38px;
@@ -248,7 +247,7 @@ border-top: 10px solid transparent;
 border-left: 10px solid rgba(138, 99, 53, .6);;
 border-bottom: 10px solid transparent;
 }
-.menu ul .linemenu{
+nav ul .linemenu{
   padding: 0;
   margin:0;
   width:1px;
@@ -727,34 +726,34 @@ border: 3px solid #3bc0ac;
 
 /*SIDEBAR*/
 
-.sidebar {
+aside {
   width: 22%;
   height: auto;
   display: block;
   float: right;
   margin-top: 1%;
 }
-.sidebar h3 {
+aside h3 {
   font-family: BOLDH;
   float: left;
   font-size: 1em;
   color: #393939;
 }
-.sidebar a {
+aside a {
   margin-left: 5%;
   font-family: italic;
   font-size: 0.9em;
   color: #278f7f;
   font-weight: bold;
 }
-.sidebar img {
+aside img {
   margin-top: 4%;
   padding-bottom:10%;
 }
-.sidebar:nth-child(4) {
+aside:nth-child(4) {
   margin-left: 0;
 }
-.sidebar p {
+aside p {
   font-family: regs;
   line-height: 1.5em;
   font-size: 12px;
@@ -762,14 +761,14 @@ border: 3px solid #3bc0ac;
   font-weight: bolder;
   margin-top: 5%;
 }
-.sidebar .Slons{
+aside .Slons{
 margin-top:20%;
 }
 
-.sidebar img+a {
+aside img+a {
   margin-left: 0;
 }
-.sidebar img a+p {
+aside img a+p {
   font-family: regs;
   line-height: 1.2em;
   font-size: 12px;
@@ -861,7 +860,7 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
   margin:8% 0 0 0.5%;
 
 }
-.footer{
+footer{
   overflow: hidden;
 background:url(img/fotter.jpg)no-repeat;
 max-width: 998px;
@@ -873,13 +872,13 @@ height: auto;
   float:left;
   padding:6% 0 4% 7%;
 }
-.footer h3 a{
+footer h3 a{
   font-size:1.8em;
   font-family:lady;
   color: #ffffff;
   font-weight:200;
 }
-.footer h3{
+footer h3{
 
 }
 .logo2 p{
@@ -891,31 +890,31 @@ margin-left:4%;
 font-weight: bold;
 text-align: center;
 }
-.footer ul{
+footer ul{
 
   width:15%;
   float:left;
   padding:6% 0 0 10%;
 }
-.footer ul li a{
+footer ul li a{
   color:#81b7ad;
 text-decoration:underline;;
   font-size:0.9em;
   font-family:italic;
 }
-.footer ul li a:hover{
+footer ul li a:hover{
 color:white;
 }
-.footer ul li{
+footer ul li{
   line-height:1;
 
   font-weight:bold;
 
 }
-.footer>ul+ul{
+footer>ul+ul{
   padding-left:5%;
 }
-.footer>ul>div{
+footer>ul>div{
   display: inline-block;
   padding-top:15%;
   width:12%;
