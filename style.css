@@ -45,6 +45,7 @@ a {
 }
 .header {
   width: 100%;
+
   overflow: hidden;
 }
 .content {
@@ -57,23 +58,22 @@ a {
   display: inline-block;
   margin-left: 7%;
 
-  margin-top:1.5%;
-
 }
 .butStrl input{
   cursor:pointer;
-  outline:none;
   border:none;
+  outline:none;
+  margin-top:16%;
 }
 .up{
   background:url(img/strelkatop.jpg) no-repeat;
-  width:15px;
-  height:16px;
+  width:14px;
+  height:14px;
 }
 .down{
   background:url(img/strelkabot.jpg) no-repeat;
-  width:15px;
-  height:16px;
+  width:14px;
+  height:14px;
   margin-left:-15%;
 }
 .someText {
@@ -83,13 +83,13 @@ a {
 
 }
 .someText h3 {
-  font-size: 18px;
+  font-size: 15px;
   color: #545454;
   font-family: BOLDH;
   float: left;
 }
 .someText p {
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #787878;
   font-family: italic;
   line-height: 1.4em;
@@ -125,15 +125,15 @@ color: transparent;
 .logo p:before, .logo p:after {
   content: '';
   position: absolute;
-  width: 2.5%;
+  width: 3%;
   border-top: 1.5px solid #6b7272;
   margin-top:.8em;
 }
 .logo p:before {
-  margin-left: -4%;
+  margin-left: -3.5%;
 }
 .logo p:after {
-  margin-left: 1%;
+  margin-left: 0.6%;
 }
 .search {
   width: 20%;
@@ -157,15 +157,19 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
   background:url(img/lupa.png) no-repeat;
   background-position:center;
     background-color:white;
-
   border:none;
   outline:none;
-  padding:2px 0 7px 0;
+  padding:2px 0px 7px 30px;
   border-radius:0px 20px 20px 0;
   width:20px;
   cursor:pointer;
   margin-left:-2%;
   box-shadow: inset 0px 3px 1px -1px #cdcdcd;
+}
+
+.search input::-webkit-input-placeholder {
+  font-family: italic;
+  font-size:0.9em;
 }
 .menu {
   width: 100%;
@@ -173,13 +177,10 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
   position: absolute;
   margin-top: 2%;
 }
-.search input::-webkit-input-placeholder {
-  font-family: italic,cursive;
-  font-size:0.9em;
-}
 .imgMenu {
   width: 100%;
 }
+
 .menu ul {
   width: 100%;
   position: absolute;
@@ -188,46 +189,46 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
 
 .menu ul li {
   display: inline-block;
-  margin-left: -.36em;
-  padding: 0.5% 2% 0.5% 2%;
+  margin-left:0.6%;
+  padding: 0.5% 1% 0.5% 1%;
   cursor: pointer;
   margin-top:0.25%;
   position: relative;
 }
 
 .menu ul li:first-child {
-  margin-left: 3%;
+  margin-left: 5%;
 }
 .menu ul li p {
-  color: #7e492b;
   margin-top: -10px;
   text-align: center;
   font-size: 0.9em;
   font-family:italic;
+  background: linear-gradient(#8f3c1b,#7a351a);  /* подробнее про градиенты */
+-webkit-background-clip: text;  /* подробнее про background-clip */
+color: transparent;
 }
 .menu ul li a {
   color: #85391b;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 .menu ul li:hover .cvet {
-  color: white;
+  background: linear-gradient(#fdfdfd,#e0e0e0);
+-webkit-background-clip: text;
+color: transparent;
 }
-.menu ul li:hover {
-  background: #9e7444;
-}
+
 .menu ul li:hover {
 position: relative;
 background: rgba(138, 99, 53, .6);
-box-shadow:
-0 0.5px 1px rgba(255, 255, 255, 0.2),
-inset 0 1px 0 rgba(0, 0, 1, 0.28);
+box-shadow:0 0.5px 1px rgba(255, 255, 255, 0.2),inset 0px 1px 0px rgba(0, 0, 1, 0.28);
 }
-
 .menu ul li:hover:after {
 content: '';
 width: 0;
 height: 38px;
+opacity:1;
 position: absolute;
 top: 0;
 left: -10px;
@@ -246,6 +247,14 @@ right: -10px;
 border-top: 10px solid transparent;
 border-left: 10px solid rgba(138, 99, 53, .6);;
 border-bottom: 10px solid transparent;
+}
+.menu ul .linemenu{
+  padding: 0;
+  margin:0;
+  width:1px;
+  border:1px solid;
+  padding-top:1.4%;
+  margin-bottom:-0.2%;
 }
 .Fix-width {
   max-width: 930px;
@@ -560,7 +569,6 @@ border-bottom: 10px solid transparent;
 }
 .latestNews ul{
 margin-left:40%;
-
 font-size:0.8em;
 color: #a49577;
 
@@ -573,24 +581,21 @@ color: #a49577;
   width:100%;
   font-size:12px;
 }
-.latestNews h1+ul li:nth-child(3){
-  width:30%;
-
+.latestNews > ul li:nth-child(2){
+width:20%;
 }
-.latestNews ul li:nth-child(2){
-
-}
-/*.latestNews ul:before{
+/*.latestNews ul li:nth-child(2):before{
 content: " ";
-position:absolute;
+display: inline-block;
 margin:0.5% 0 0 3.6%;
 width:5px;
 height:5px;
 border-radius:100%;
 background:#5cab9f;
 }*/
-.latestNews  ul li:nth-child(3){
+.latestNews .COntNEWSs ul li:nth-child(3){
   color:#55a194;
+    width:50%;
 }
 .latestNews div p {
   margin-left:40%;
@@ -601,40 +606,75 @@ background:#5cab9f;
   line-height:1.3;
   font-weight:500;
   margin-top:1%;
+  padding-bottom:0.8%;
 }
 .Comments{
   margin-left:7%;
-
   width:10%;
   font-size:11px;
+  margin-bottom:-2.5%;
+  text-align: center;
+  font-family: italic;
+  font-weight:bold;
   background:#f0e3c8;
   color:#b3a07a;
-  padding:0 1% 0 1%;
-  font-family: regs;
-float: left;
+  padding:0 1%;
+  position:relative;
+  float: left;
+  line-height:1.6;
+
+
+
+}
+.Comments:after, .Comments:before {
+  bottom: 100%;
+  left: 15%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.Comments:after {
+  border-bottom-color: rgb(240, 227, 200);
+  border-width: 5px;
+  margin-left: -5px;
+}
+.Comments:before {
+  border-bottom-color: rgb(240, 227, 200);
+  border-width: 6px;
+  margin-left: -6px;
 }
 
 .latestNews .Socseti{
   width:10%;
   float:left;
-  margin-left:0;
+  margin:0;
+  padding:0;
+  margin-left:3%;
   margin-top:2%;
-  margin-left:5%;
-
 }
 .latestNews+div{
   overflow: hidden;
 }
-.Socseti img{
-  width:22px;
-  height:22px;
+
+.latestNews .Socseti a{
+  padding:0;
+  margin:0;
+
 }
+.latestNews .Socseti img{
+  margin-left:5%;
+}
+
+
 .latestNews span{
 font-family: regs;
 font-weight: bold;
   font-size:13px;
   color:#b2a78f;
-  margin-top:2%;
+  margin-top: 1.4%;
   display: inline-block;
   width:30%;
 
@@ -806,7 +846,7 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
       background-color:#f4ebd8;
   border:none;
   outline:none;
-  padding:2px 0px 8px 0;
+  padding:2px 0px 7px 30px;
   border-radius:0px 20px 20px 0;
   width:25px;
   cursor:pointer;
@@ -833,11 +873,14 @@ height: auto;
   float:left;
   padding:6% 0 4% 7%;
 }
+.footer h3 a{
+  font-size:1.8em;
+  font-family:lady;
+  color: #ffffff;
+  font-weight:200;
+}
 .footer h3{
-font-size:1.8em;
-font-family:lady;
-color: #ffffff;
-font-weight:200;
+
 }
 .logo2 p{
 font-family: italic;
@@ -860,6 +903,9 @@ text-decoration:underline;;
   font-size:0.9em;
   font-family:italic;
 }
+.footer ul li a:hover{
+color:white;
+}
 .footer ul li{
   line-height:1;
 
@@ -872,5 +918,5 @@ text-decoration:underline;;
 .footer>ul>div{
   display: inline-block;
   padding-top:15%;
-  width:11%;
+  width:12%;
 }
