@@ -104,6 +104,7 @@ header {
   color: #545454;
   font-family: BOLDH;
   float: left;
+  font-weight:200;
 }
 .someText p {
   font-size: 0.7em;
@@ -166,7 +167,9 @@ header {
   padding:2.5% 0 2% 10%;
   outline: none;
   border:none;
-box-shadow: inset 3px 3px 1px -1px #cdcdcd;
+  -webkit-box-shadow: inset 3px 3px 1px -1px #cdcdcd;
+  box-shadow: inset 3px 3px 1px -1px #cdcdcd;
+
   float: left;
   width: 75%;
 }
@@ -178,6 +181,7 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
   border:none;
   outline:none;
   padding:2px 0px 8px 30px;
+  -moz-padding:2px 0px 8px 15px;
   border-radius:0px 20px 20px 0;
   width:2%;
   cursor:pointer;
@@ -186,7 +190,7 @@ box-shadow: inset 3px 3px 1px -1px #cdcdcd;
   float: left;
 }
 
-.search input::-webkit-input-placeholder {
+.search input::-webkit-input-placeholder , .search input::-moz-placeholder{
   font-family: italic;
   font-size:0.9em;
 }
@@ -227,8 +231,7 @@ nav ul li p {
 color: #723a1e;
 }
 nav ul li a {
-  background: linear-gradient(#8f3c1b,#7a351a);  /* подробнее про градиенты */
--webkit-background-clip: text;  /* подробнее про background-clip */
+
   color:#8b3a1b;
   text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255,0.50);
   font-weight: bold;
@@ -244,9 +247,7 @@ nav ul .line{
   position: absolute;
 }
 nav ul li:hover .cvet {
-  background: linear-gradient(#fdfdfd,#e0e0e0);
--webkit-background-clip: text;
-color: transparent;
+color:white;
 }
 
 nav ul li:hover {
@@ -612,12 +613,15 @@ margin-top:0;
 .latestNews div{
   margin-top:2%;
 }
+.latestNews article{
+  margin-top:4%;
+}
 .dates{
   margin:0;
   padding:0;
   width:30%;
 }
-.latestNews div h1{
+.latestNews article h1{
   width:auto;
   margin-left:40%;
   font-family: regs;
@@ -631,7 +635,6 @@ margin-top:0;
 .latestNews .dates a{
   width:100%;
   font-size:10px;
-  margin:0;
 }
 .latestNews .dates:nth-child(2){
 width:10%;
@@ -653,7 +656,7 @@ background:#5cab9f;
   color:#55a194;
     width:50%;
 }
-.latestNews div p {
+.latestNews article p {
   margin-left:40%;
   width: 58%;
   font-size:0.8em;
@@ -740,6 +743,7 @@ font-weight: bold;
 }
 .latesVideo{
   float: left;
+  padding-top:5%;
   width:auto;
 }
 .latesVideo h3{
@@ -754,11 +758,11 @@ font-weight: bold;
 }
 .moreVideos {
   width:30%;
-  margin-top:5%;
   float: left;
   margin-left:7%;
-
+padding-top:5%;
 }
+
 .moreVideos img{
 margin:0 2% 2% 0;
 }
